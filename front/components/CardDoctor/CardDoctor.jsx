@@ -1,6 +1,7 @@
 import { s } from "./CardDoctor.style";
 import React, { useEffect, useState } from "react";
-import { Image, Text, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
+import { styles } from "../ProfilDoctor/ProfilDoctor.style";
 
 export function CardDoctor({
   name,
@@ -28,6 +29,9 @@ export function CardDoctor({
           <Text style={s.text2}> Contact </Text>
           {contact}
         </Text>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Voir plus</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
