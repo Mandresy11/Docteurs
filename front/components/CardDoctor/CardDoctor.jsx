@@ -4,7 +4,7 @@ import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../ProfilDoctor/ProfilDoctor.style";
 
 export function CardDoctor({
-  name,
+  name ,
   firstname,
   speciality,
   contact,
