@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./ProfilDoctor.style";
 
-export const ProfilDoctor = () => {
+const ProfilDoctor = () => {
   return (
     <View style={styles.container}>
       <Image
@@ -17,3 +17,5 @@ export const ProfilDoctor = () => {
     </View>
   );
 };
+
+export default ProfilDoctor;

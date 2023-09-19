@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CardDoctor } from "../components/CardDoctor/CardDoctor";
+import { CardDoctor } from "../components/CardDoctor/CardDoctorList";
 import axios from "axios";
 
 function Display() {
