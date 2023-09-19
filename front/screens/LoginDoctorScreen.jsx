@@ -97,7 +97,7 @@ const LoginDoctorScreen = ({ navigation }) => {
             textAlign: "center",
           }}
         >
-          Login
+          Docteur 
         </Text>
         <Text
           style={{
@@ -134,7 +134,7 @@ const LoginDoctorScreen = ({ navigation }) => {
           />
           <ButtonRegister title="Se connecter" onPress={validate} />
           <Text
-            onPress={() => navigation.navigate("RegistrationScreen")}
+            onPress={() => navigation.navigate("RegistrationDoctorScreen")}
             style={style.loginLink}
           >
             Pas encore de compte ?{" "}
@@ -144,7 +144,7 @@ const LoginDoctorScreen = ({ navigation }) => {
                 textDecorationLine: "underline",
               }}
             >
-              En Créer un
+              Créer un compte Docteur
             </Text>
           </Text>
         </View>

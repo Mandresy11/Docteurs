@@ -6,15 +6,25 @@ const LoginDoctorScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const[token,setToken] = useState("");
+  const[id,setId] = useState("");
+  const[etat,setEtat] = useState("");
+
+
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://127.0.0.1:3000/auth/loginDoctor", {
+      const res = await axios.post("http://127.0.0.1:3000/auth/loginDoctor", {
         email,
         password,
       });
 
-      if (response.status === 200) {
-        console.log("Login Response Data:", response.data);
+      if (res.status === 200) {
+        console.log("Login Response Data:", res.data.token);
+
+        localStorage.setItem('token',res.data.token)
+        localStorage.setItem('id',res.data.id)
+        localStorage.setItem('etat',res.data.etat)
+
         navigation.navigate("home");
       } else {
         Alert.alert("Login Failed", "Invalid email or password");
