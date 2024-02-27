@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Button } from 'react-native';
-import { Camera } from 'expo-camera';
+//import { Camera } from 'expo-camera';
 import { Video } from 'expo-av';
 
 const AppointmentsScreen = ({ route }) => {

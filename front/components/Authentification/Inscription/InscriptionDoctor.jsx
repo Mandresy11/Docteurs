@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import axios from "axios";
 import * as ImagePicker from 'expo-image-picker';
+import COLORS from "../../../theme";
 
 
 const RegisterDoctor = () => {
@@ -105,7 +106,7 @@ const pickImage = async () => {
             style={{ width: 100, height: 100 }}
           />
         )}
-        <Button title="Pick an image from camera roll" onPress={pickImage} />
+        <Button style={{backgroundColor:COLORS.black} }title="Pick an image from camera roll" onPress={pickImage} />
         
         {/* Rest of your form */}
         

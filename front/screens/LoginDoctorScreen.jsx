@@ -134,7 +134,7 @@ const LoginDoctorScreen = ({ navigation }) => {
           />
           <ButtonRegister title="Se connecter" onPress={validate} />
           <Text
-            onPress={() => navigation.navigate("RegistrationDoctorScreen")}
+            onPress={() => navigation.navigate("inscriptionDoctor")}
             style={style.loginLink}
           >
             Pas encore de compte ?{" "}
